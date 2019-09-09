@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 //        actionBar.setTitle("Home");
         Button btnBai01 = (Button) findViewById(R.id.btnBai01);
         Button btnBai02 = (Button) findViewById(R.id.btnBai02);
+        Button btnBai03 = (Button) findViewById(R.id.btnBai03);
         btnBai01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Bai02Activity.class));
+            }
+        });
+        btnBai03.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Bai03Activity.class));
             }
         });
 

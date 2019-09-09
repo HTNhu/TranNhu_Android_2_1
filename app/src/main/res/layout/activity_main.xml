@@ -17,6 +17,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/btnBai03"
+        android:layout_width="121dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="168dp"
+        android:text="Bai 03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/btnBai02"
         android:layout_width="121dp"
         android:layout_height="38dp"

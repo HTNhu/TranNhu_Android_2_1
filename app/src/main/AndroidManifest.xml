@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Bai01Activity" />
-        <activity android:name=".Bai02Activity"></activity>
+        <activity android:name=".Bai02Activity" />
+        <activity android:name=".Bai03Activity"></activity>
     </application>
 
 </manifest>
