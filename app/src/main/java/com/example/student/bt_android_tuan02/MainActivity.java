@@ -16,11 +16,17 @@ public class MainActivity extends AppCompatActivity {
 //        ActionBar actionBar = getSupportActionBar();
 //        actionBar.setTitle("Home");
         Button btnBai01 = (Button) findViewById(R.id.btnBai01);
-
+        Button btnBai02 = (Button) findViewById(R.id.btnBai02);
         btnBai01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Bai01Activity.class));
+            }
+        });
+        btnBai02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Bai02Activity.class));
             }
         });
 

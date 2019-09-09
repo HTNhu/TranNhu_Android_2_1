@@ -35,12 +35,20 @@ public class Bai01Activity extends AppCompatActivity {
         btnTong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double num1 = Double.parseDouble(edtSoA.getText().toString());
-                double num2 = Double.parseDouble(edtSoB.getText().toString());
+                try{
+                    if(edtSoA.getText().toString() == "" || edtSoB.getText().toString() =="" ){
+                        Toast.makeText(Bai01Activity.this,"Not empty", Toast.LENGTH_SHORT).show();
+                    }else{
+                        double num1 = Double.parseDouble(edtSoA.getText().toString());
+                        double num2 = Double.parseDouble(edtSoB.getText().toString());
 
-                double tong = num1 + num2;
+                        double tong = num1 + num2;
 
-                Toast.makeText(Bai01Activity.this, String.valueOf(tong), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Bai01Activity.this, String.valueOf(tong), Toast.LENGTH_SHORT).show();
+                    }
+                }catch (Exception ex){
+                    Toast.makeText(Bai01Activity.this,"Nhập lỗi" + ex.toString(), Toast.LENGTH_SHORT).show();
+                }
             }
         });
         btnHieu.setOnClickListener(new View.OnClickListener() {
