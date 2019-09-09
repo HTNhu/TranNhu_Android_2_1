@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bai01Activity">
+
+    <EditText
+        android:id="@+id/edtSoB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="so a: "
+        app:layout_constraintBottom_toTopOf="@+id/edtSoB3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtSoB3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="so b: "
+        app:layout_constraintBottom_toTopOf="@+id/btnTong2"
+        app:layout_constraintStart_toStartOf="@+id/edtSoB2"
+        app:layout_constraintTop_toBottomOf="@+id/edtSoB2" />
+
+    <Button
+        android:id="@+id/btnThuong2"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:text="Thuong 2 so"
+        app:layout_constraintBottom_toTopOf="@+id/btnUoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTich" />
+
+    <Button
+        android:id="@+id/btnTong2"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tong 2 so"
+        app:layout_constraintBottom_toTopOf="@+id/btnHieu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSoB3" />
+
+    <Button
+        android:id="@+id/btnHieu"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:text="Hieu 2 so"
+        app:layout_constraintBottom_toTopOf="@+id/btnTich"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTong2" />
+
+    <Button
+        android:id="@+id/btnTich"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:text="Tich 2 so"
+        app:layout_constraintBottom_toTopOf="@+id/btnThuong2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHieu" />
+
+    <Button
+        android:id="@+id/btnUoc"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:text="Uoc chung"
+        app:layout_constraintBottom_toTopOf="@+id/btnThoat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnThuong2" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:text="Thoat ct"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUoc" />
+</android.support.constraint.ConstraintLayout>
